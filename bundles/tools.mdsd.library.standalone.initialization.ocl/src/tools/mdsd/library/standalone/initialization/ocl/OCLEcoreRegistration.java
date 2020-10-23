@@ -1,4 +1,4 @@
-package tools.mdsd.library.standalone.initialization.impl;
+package tools.mdsd.library.standalone.initialization.ocl;
 
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.ecore.delegate.OCLDelegateDomain;

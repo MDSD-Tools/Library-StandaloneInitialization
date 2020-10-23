@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import tools.mdsd.library.standalone.initialization.impl.EcoreClassPathDetection;
-import tools.mdsd.library.standalone.initialization.impl.OCLEcoreRegistration;
 import tools.mdsd.library.standalone.initialization.impl.ProjectURIByClasspathRegistration;
 import tools.mdsd.library.standalone.initialization.impl.StandaloneInitializerImpl;
 
@@ -14,7 +13,6 @@ import tools.mdsd.library.standalone.initialization.impl.StandaloneInitializerIm
 public class StandaloneInitializerBuilder {
 
     private boolean ecoreClasspathDetection = true;
-    private boolean ecoreOCL = true;
     private final List<InitializationTask> initializationTasks = new ArrayList<>();
 
     private StandaloneInitializerBuilder() {
@@ -40,18 +38,6 @@ public class StandaloneInitializerBuilder {
      */
     public StandaloneInitializerBuilder useEcoreClasspathDetection(boolean use) {
         this.ecoreClasspathDetection = use;
-        return this;
-    }
-
-    /**
-     * Register the OCL Ecore implementation. The default is using it.
-     * 
-     * @param use
-     *            True for using it, false otherwise.
-     * @return Modified builder instance.
-     */
-    public StandaloneInitializerBuilder useEcoreOCL(boolean use) {
-        this.ecoreOCL = use;
         return this;
     }
 
@@ -112,9 +98,6 @@ public class StandaloneInitializerBuilder {
         List<InitializationTask> tasks = new ArrayList<>();
         if (ecoreClasspathDetection) {
             tasks.add(new EcoreClassPathDetection());
-        }
-        if (ecoreOCL) {
-            tasks.add(new OCLEcoreRegistration());
         }
         tasks.addAll(initializationTasks);
         return new StandaloneInitializerImpl(tasks);

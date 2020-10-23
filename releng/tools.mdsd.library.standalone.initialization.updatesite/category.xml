@@ -12,6 +12,12 @@
    <feature id="tools.mdsd.library.standalone.initialization.log4j.feature.source" version="0.1.0.qualifier">
       <category name="standaloneinit.source"/>
    </feature>
+   <feature id="tools.mdsd.library.standalone.initialization.ocl.feature" version="0.1.0.qualifier">
+      <category name="standaloneinit"/>
+   </feature>
+   <feature id="tools.mdsd.library.standalone.initialization.ocl.feature.source" version="0.1.0.qualifier">
+      <category name="standaloneinit.source"/>
+   </feature>   
    <category-def name="standaloneinit" label="MDSD Tools Standalone Initialization"/>
    <category-def name="standaloneinit.source" label="MDSD Tools Standalone Initialization Developer Resources"/>
 </site>
