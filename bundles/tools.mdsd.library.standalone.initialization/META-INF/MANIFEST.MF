@@ -4,8 +4,8 @@ Bundle-Name: Standalone Initialization
 Bundle-SymbolicName: tools.mdsd.library.standalone.initialization
 Bundle-Version: 0.1.0.qualifier
 Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.emf.ecore;visibility:=reexport,
- org.eclipse.ocl.ecore;visibility:=reexport
+ org.eclipse.emf.ecore;visibility:=reexport
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Automatic-Module-Name: tools.mdsd.library.standalone.initialization
-Export-Package: tools.mdsd.library.standalone.initialization
+Export-Package: tools.mdsd.library.standalone.initialization,
+ tools.mdsd.library.standalone.initialization.core
