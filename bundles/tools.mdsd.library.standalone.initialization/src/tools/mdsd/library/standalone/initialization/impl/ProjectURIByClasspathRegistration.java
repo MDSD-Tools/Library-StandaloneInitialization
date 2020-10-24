@@ -1,6 +1,8 @@
 package tools.mdsd.library.standalone.initialization.impl;
 
 import java.io.File;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 import java.util.Optional;
 
 import tools.mdsd.library.standalone.initialization.InitializationTask;
@@ -46,12 +48,13 @@ public class ProjectURIByClasspathRegistration implements InitializationTask {
             .getCodeSource()
             .getLocation()
             .getPath();
-        var projectNameIndex = classLocation.indexOf(projectRootFolderName);
+        var plainLocation = URLDecoder.decode(classLocation, StandardCharsets.UTF_8);
+        var projectNameIndex = plainLocation.indexOf(projectRootFolderName);
         var projectNameLength = projectRootFolderName.length();
         if (projectNameIndex < 0) {
             return Optional.empty();
         }
-        var projectLocation = classLocation.substring(0, projectNameIndex + projectNameLength);
+        var projectLocation = plainLocation.substring(0, projectNameIndex + projectNameLength);
         return Optional.of(new File(projectLocation));
     }
 
