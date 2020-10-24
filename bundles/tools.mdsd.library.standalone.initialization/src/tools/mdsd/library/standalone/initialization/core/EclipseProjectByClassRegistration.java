@@ -23,7 +23,7 @@ import tools.mdsd.library.standalone.initialization.impl.ProjectURIByLocationReg
  *
  */
 public class EclipseProjectByClassRegistration implements InitializationTask {
-    private Class<?> clazz;
+    private final Class<?> clazz;
 
     /**
      * Creates a new instance of the initialization task.
