@@ -88,7 +88,7 @@ public class EclipseProjectScanner implements InitializationTask {
         var manifestPath = Paths.get(JarFile.MANIFEST_NAME);
         res.putAll(Files
             .find(basePath, DEFAULT_MAX_DEPTH + manifestPath.getNameCount(),
-                    (path, attr) -> path.endsWith(Paths.get(JarFile.MANIFEST_NAME)))
+                    (path, attr) -> path.endsWith(manifestPath))
             .collect(Collectors.toMap(EclipseProjectScanner::readProjectNameFromManifestFile, path -> {
                 var result = path;
                 // Using subpath removes the root, therefore we loop manually
@@ -102,9 +102,8 @@ public class EclipseProjectScanner implements InitializationTask {
     }
 
     protected static String readProjectNameFromProjectFile(Path path) {
-        Document document;
         try {
-            document = DocumentBuilderFactory.newInstance()
+            var document = DocumentBuilderFactory.newInstance()
                 .newDocumentBuilder()
                 .parse(Files.newInputStream(path, StandardOpenOption.READ));
             return document.getDocumentElement()
