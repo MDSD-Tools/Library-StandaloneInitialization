@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import tools.mdsd.library.standalone.initialization.impl.EcoreClassPathDetection;
+import tools.mdsd.library.standalone.initialization.impl.MetaModelRegistrationTask;
 import tools.mdsd.library.standalone.initialization.impl.ProjectURIByClasspathRegistration;
 import tools.mdsd.library.standalone.initialization.impl.StandaloneInitializerImpl;
 
@@ -74,6 +75,28 @@ public class StandaloneInitializerBuilder {
         ProjectURIByClasspathRegistration task = new ProjectURIByClasspathRegistration(classOfProject, projectName,
                 rootFolderName);
         initializationTasks.add(task);
+        return this;
+    }
+
+    /**
+     * Register a meta model by a given project name and a relative path within this project.
+     * 
+     * Callers have to ensure that
+     * <ul>
+     * <li>the given project is registered, e.g. by calling
+     * {@link #registerProjectURI(Class, String)}</li>
+     * <li>either {@link #useEcoreClasspathDetection(boolean)} is used or all prerequisites for
+     * loading the meta model resource are fulfilled</li>
+     * </ul>
+     * 
+     * @param projectName
+     *            The name of the project.
+     * @param relativePath
+     *            The path to the meta model file relative to the project without leading slash.
+     * @return Modified builder instance.
+     */
+    public StandaloneInitializerBuilder registerMetaModel(String projectName, String relativePath) {
+        initializationTasks.add(new MetaModelRegistrationTask(projectName, relativePath));
         return this;
     }
 
