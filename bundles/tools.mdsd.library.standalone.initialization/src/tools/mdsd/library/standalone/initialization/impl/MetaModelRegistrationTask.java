@@ -27,7 +27,7 @@ public class MetaModelRegistrationTask implements InitializationTask {
      * Constructs the task
      * 
      * @param projectName
-     *            The name of the project hosting the profile.
+     *            The name of the project hosting the meta model.
      * @param metaModelPath
      *            The path of the meta model relative to the given project without leading slash.
      */
@@ -48,7 +48,7 @@ public class MetaModelRegistrationTask implements InitializationTask {
                 .get(0);
             queue.add(epackage);
         } catch (WrappedException e) {
-            throw new StandaloneInitializationException("Could not load profile. Please check preconditions.",
+            throw new StandaloneInitializationException("Could not load meta model. Please check preconditions.",
                     e.getCause());
         }
         
