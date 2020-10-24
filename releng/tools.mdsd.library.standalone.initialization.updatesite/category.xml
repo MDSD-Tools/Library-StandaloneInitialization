@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature id="tools.mdsd.library.standalone.initialization.core.feature" version="0.1.0.qualifier">
+   <feature id="tools.mdsd.library.standalone.initialization.core.feature" version="0.2.0.qualifier">
       <category name="standaloneinit"/>
    </feature>
-   <feature id="tools.mdsd.library.standalone.initialization.core.feature.source" version="0.1.0.qualifier">
+   <feature id="tools.mdsd.library.standalone.initialization.core.feature.source" version="0.2.0.qualifier">
       <category name="standaloneinit.source"/>
    </feature>
-   <feature id="tools.mdsd.library.standalone.initialization.log4j.feature" version="0.1.0.qualifier">
+   <feature id="tools.mdsd.library.standalone.initialization.log4j.feature" version="0.2.0.qualifier">
       <category name="standaloneinit"/>
    </feature>
-   <feature id="tools.mdsd.library.standalone.initialization.log4j.feature.source" version="0.1.0.qualifier">
+   <feature id="tools.mdsd.library.standalone.initialization.log4j.feature.source" version="0.2.0.qualifier">
       <category name="standaloneinit.source"/>
    </feature>
-   <feature id="tools.mdsd.library.standalone.initialization.ocl.feature" version="0.1.0.qualifier">
+   <feature id="tools.mdsd.library.standalone.initialization.ocl.feature" version="0.2.0.qualifier">
       <category name="standaloneinit"/>
    </feature>
-   <feature id="tools.mdsd.library.standalone.initialization.ocl.feature.source" version="0.1.0.qualifier">
+   <feature id="tools.mdsd.library.standalone.initialization.ocl.feature.source" version="0.2.0.qualifier">
       <category name="standaloneinit.source"/>
    </feature>   
    <category-def name="standaloneinit" label="MDSD Tools Standalone Initialization"/>
