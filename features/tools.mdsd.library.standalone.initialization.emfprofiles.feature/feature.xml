@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="tools.mdsd.library.standalone.initialization.emfprofiles.feature"
+      label="Standalone Initialization EMFProfiles"
+      version="0.2.0.qualifier"
+      license-feature="tools.mdsd.license.epl2"
+      license-feature-version="1.0.0">
+
+   <requires>
+      <import feature="tools.mdsd.license.epl2"/>
+      <import plugin="org.modelversioning.emfprofile.registry"/>
+   </requires>
+
+   <includes
+         id="tools.mdsd.library.standalone.initialization.core.feature"
+         version="0.0.0"/>
+
+   <plugin
+         id="tools.mdsd.library.standalone.initialization.emfprofiles"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
