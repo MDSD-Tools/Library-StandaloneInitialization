@@ -12,6 +12,12 @@
    <feature id="tools.mdsd.library.standalone.initialization.log4j.feature.source" version="0.2.0.qualifier">
       <category name="standaloneinit.source"/>
    </feature>
+   <feature id="tools.mdsd.library.standalone.initialization.emfprofiles.feature" version="0.2.0.qualifier">
+      <category name="standaloneinit"/>
+   </feature>
+   <feature id="tools.mdsd.library.standalone.initialization.emfprofiles.feature.source" version="0.2.0.qualifier">
+      <category name="standaloneinit.source"/>
+   </feature>
    <feature id="tools.mdsd.library.standalone.initialization.ocl.feature" version="0.2.0.qualifier">
       <category name="standaloneinit"/>
    </feature>

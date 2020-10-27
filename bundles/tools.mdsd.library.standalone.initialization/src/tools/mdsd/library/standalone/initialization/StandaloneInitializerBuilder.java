@@ -3,8 +3,8 @@ package tools.mdsd.library.standalone.initialization;
 import java.util.ArrayList;
 import java.util.List;
 
+import tools.mdsd.library.standalone.initialization.core.MetaModelRegistrationTask;
 import tools.mdsd.library.standalone.initialization.impl.EcoreClassPathDetection;
-import tools.mdsd.library.standalone.initialization.impl.MetaModelRegistrationTask;
 import tools.mdsd.library.standalone.initialization.impl.ProjectURIByClasspathRegistration;
 import tools.mdsd.library.standalone.initialization.impl.StandaloneInitializerImpl;
 

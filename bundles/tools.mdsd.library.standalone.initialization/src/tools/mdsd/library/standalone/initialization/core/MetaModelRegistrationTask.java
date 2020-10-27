@@ -1,4 +1,4 @@
-package tools.mdsd.library.standalone.initialization.impl;
+package tools.mdsd.library.standalone.initialization.core;
 
 import java.util.LinkedList;
 
