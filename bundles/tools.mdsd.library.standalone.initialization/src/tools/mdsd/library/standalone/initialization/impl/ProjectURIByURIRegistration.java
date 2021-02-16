@@ -36,6 +36,9 @@ public class ProjectURIByURIRegistration implements InitializationTask {
     public void initilizationWithoutPlatform() throws StandaloneInitializationException {
         var projectURI = realProjectURI.orElseThrow(() -> new StandaloneInitializationException(
                 "Could not register project " + projectName + " because of missing URI."));
+        if (!projectURI.hasTrailingPathSeparator()) {
+            projectURI = projectURI.appendSegment("");
+        }
         EcorePlugin.getPlatformResourceMap()
             .put(projectName, projectURI);
         var pluginURI = URI.createPlatformPluginURI("/" + projectName + "/", false);
