@@ -2,23 +2,17 @@
 <feature
       id="tools.mdsd.library.standalone.initialization.ocl.feature"
       label="OCL Standalone Initialization Feature"
-      version="0.2.0.qualifier">
-
-   <description url="http://www.example.com/description">
-      [Enter Feature Description here.]
-   </description>
-
-   <copyright url="http://www.example.com/copyright">
-      [Enter Copyright Description here.]
-   </copyright>
-
-   <license url="http://www.example.com/license">
-      [Enter License Description here.]
-   </license>
+      version="0.2.0.qualifier"
+      license-feature="tools.mdsd.license.epl2"
+      license-feature-version="1.0.0">
 
    <requires>
-      <import feature="tools.mdsd.library.standalone.initialization.core.feature" version="0.2.0.qualifier"/>
+      <import feature="tools.mdsd.license.epl2"/>
    </requires>
+
+   <includes
+         id="tools.mdsd.library.standalone.initialization.core.feature"
+         version="0.0.0"/>
 
    <plugin
          id="tools.mdsd.library.standalone.initialization.ocl"
