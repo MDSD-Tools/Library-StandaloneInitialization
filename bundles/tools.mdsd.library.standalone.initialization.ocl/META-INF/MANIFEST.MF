@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
+Bundle-ManifestVersion: 3
 Bundle-Name: Ecore OCL Standalone Initializer
 Bundle-SymbolicName: tools.mdsd.library.standalone.initialization.ocl
-Bundle-Version: 0.2.0.qualifier
+Bundle-Version: 0.3.0.qualifier
 Automatic-Module-Name: tools.mdsd.library.standalone.initialization.ocl
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: org.eclipse.ocl.ecore;bundle-version="3.15.0",
- tools.mdsd.library.standalone.initialization;bundle-version="0.1.0"
+ tools.mdsd.library.standalone.initialization
