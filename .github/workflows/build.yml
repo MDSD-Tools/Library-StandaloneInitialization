@@ -8,6 +8,7 @@ jobs:
     with:
       use-display-output: true
       runner-label: ubuntu-latest
+      java-version: 17
       deploy-updatesite: 'releng/tools.mdsd.library.standalone.initialization.updatesite/target/repository'
     secrets:
       SERVER_SSH_KEY: ${{ secrets.DEPLOYMENT_SERVER_SSH_KEY }}
