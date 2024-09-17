@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bundle-ManifestVersion: 3
+Bundle-ManifestVersion: 2
 Bundle-Name: Ecore OCL Standalone Initializer
 Bundle-SymbolicName: tools.mdsd.library.standalone.initialization.ocl
 Bundle-Version: 0.3.0.qualifier
