@@ -3,7 +3,7 @@
 <locations>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
         <repository location="https://updatesite.mdsd.tools/build-licensefeature/releases/latest/"/>
-        <unit id="tools.mdsd.license.epl2.feature.group" version="1.0.0"/>
+        <unit id="tools.mdsd.license.epl2.feature.group" version="0.0.0"/>
     </location>
     <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" refresh="true">
         <repository location="https://updatesite.palladio-simulator.com/palladio-thirdparty-emfprofiles/releases/latest/"/>

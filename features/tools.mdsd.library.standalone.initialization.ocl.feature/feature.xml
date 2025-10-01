@@ -2,7 +2,7 @@
 <feature
       id="tools.mdsd.library.standalone.initialization.ocl.feature"
       label="OCL Standalone Initialization Feature"
-      version="0.3.0.qualifier"
+      version="1.0.0"
       license-feature="tools.mdsd.license.epl2"
       license-feature-version="1.0.0">
 
@@ -12,13 +12,13 @@
 
    <includes
          id="tools.mdsd.library.standalone.initialization.core.feature"
-         version="0.0.0"/>
+         version="1.0.0"/>
 
    <plugin
          id="tools.mdsd.library.standalone.initialization.ocl"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.0.0"
          unpack="false"/>
 
 </feature>

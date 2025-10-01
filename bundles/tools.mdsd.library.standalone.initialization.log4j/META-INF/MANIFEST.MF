@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Standalone Initialization Log4j
 Bundle-SymbolicName: tools.mdsd.library.standalone.initialization.log4j
-Bundle-Version: 0.3.0.qualifier
+Bundle-Version: 1.0.0
 Require-Bundle: org.eclipse.core.runtime,
  tools.mdsd.library.standalone.initialization
 Bundle-RequiredExecutionEnvironment: JavaSE-17

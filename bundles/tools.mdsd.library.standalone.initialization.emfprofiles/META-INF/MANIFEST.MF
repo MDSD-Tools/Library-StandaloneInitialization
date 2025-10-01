@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Standalone Initialization EMFProfiles
 Bundle-SymbolicName: tools.mdsd.library.standalone.initialization.emfprofiles
-Bundle-Version: 0.3.0.qualifier
+Bundle-Version: 1.0.0
 Automatic-Module-Name: tools.mdsd.library.standalone.initialization.emfprofiles
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Require-Bundle: tools.mdsd.library.standalone.initialization,
