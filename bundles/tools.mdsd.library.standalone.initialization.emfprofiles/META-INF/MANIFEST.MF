@@ -4,7 +4,7 @@ Bundle-Name: Standalone Initialization EMFProfiles
 Bundle-SymbolicName: tools.mdsd.library.standalone.initialization.emfprofiles
 Bundle-Version: 1.0.0
 Automatic-Module-Name: tools.mdsd.library.standalone.initialization.emfprofiles
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Require-Bundle: tools.mdsd.library.standalone.initialization,
  org.modelversioning.emfprofile.registry;bundle-version="1.0.0"
 Export-Package: tools.mdsd.library.standalone.initialization.emfprofiles

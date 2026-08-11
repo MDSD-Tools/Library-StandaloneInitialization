@@ -5,7 +5,7 @@ Bundle-SymbolicName: tools.mdsd.library.standalone.initialization.log4j
 Bundle-Version: 1.0.0
 Require-Bundle: org.eclipse.core.runtime,
  tools.mdsd.library.standalone.initialization
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Automatic-Module-Name: tools.mdsd.library.standalone.initialization.log4j
 Import-Package: org.apache.log4j;version="1.2.15"
 Export-Package: tools.mdsd.library.standalone.initialization.log4j
