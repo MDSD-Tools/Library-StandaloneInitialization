@@ -2,9 +2,9 @@
 <feature
       id="tools.mdsd.library.standalone.initialization.core.feature"
       label="Standalone Initialization Core Feature"
-      version="1.1.0"      
+      version="1.2.0"      
       license-feature="tools.mdsd.license.epl2"
-      license-feature-version="1.1.0">
+      license-feature-version="1.2.0">
 
    <requires>
       <import feature="tools.mdsd.license.epl2"/>
@@ -14,7 +14,7 @@
          id="tools.mdsd.library.standalone.initialization"
          download-size="0"
          install-size="0"
-         version="1.1.0"
+         version="1.2.0"
          unpack="false"/>
 
 </feature>
